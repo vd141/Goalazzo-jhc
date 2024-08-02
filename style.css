@@ -1,0 +1,23 @@
+/* 
+font-face allows you to use a font by specifying a path
+to a copy of the font
+*/
+
+@font-face {
+    font-family: 'DellaRespira';
+    src: url('assets/fonts/Della_Respira/DellaRespira-Regular.ttf');
+}
+@font-face {
+    font-family: 'KalniaGlaze';
+    src: url('assets/fonts/Kalnia_Glaze/KalniaGlaze-VariableFont_wdth\,wght.ttf');
+}
+
+@font-face {
+    font-family: 'Dosis';
+    src: url('https://fonts.googleapis.com/css?family=Dosis');
+}
+
+h1 {
+    font-family: 'Dosis';
+    font-size: 10rem;
+}
