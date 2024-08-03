@@ -12,12 +12,32 @@ to a copy of the font
     src: url('assets/fonts/Kalnia_Glaze/KalniaGlaze-VariableFont_wdth\,wght.ttf');
 }
 
-@font-face {
+html {
     font-family: 'Dosis';
-    src: url('https://fonts.googleapis.com/css?family=Dosis');
 }
 
 h1 {
-    font-family: 'Dosis';
-    font-size: 10rem;
+    font-size: 7em;
+    text-align: center;
+    display: block;
+}
+
+button {
+    border-radius: 5em;
+    box-shadow: 0 0 0 4em orchid;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+#goal_carousel_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#goal_item {
+    border: solid;
 }
