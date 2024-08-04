@@ -16,19 +16,22 @@ html {
     font-family: 'Dosis';
 }
 
-h1 {
-    font-size: 7em;
-    text-align: center;
-    display: block;
+body {
+    background-image: url('https://images.unsplash.com/photo-1482385916434-814664df9c5b?q=80&w=2786&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center;
 }
 
-button {
-    border-radius: 5em;
-    box-shadow: 0 0 0 4em orchid;
+#button_add_goal {
+    border-radius: 1em;
+    padding: 0.25em 3em;
+    font-size: 1em;
+    background: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
 }
 
-button:hover {
-    background-color: blue;
+#button_add_goal:hover {
+    background-color: #c2c1c1;
 }
 
 #goal_carousel_container {
@@ -36,8 +39,35 @@ button:hover {
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;
+    background: #f4f4f4;
+    padding: 1em 1em;
+    border-radius: 1em;
+    width: 30em;
 }
 
-#goal_item {
-    border: solid;
+.goal_item {
+    display:flex;
+    border-radius: 1em;
+    background: #ffffff;
+    padding: 1em 1em;
+    clear: both;
+    gap: 2em;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+#goal_notes {
+    float: left;
+}
+
+#calendar {
+    float: left;
+}
+
+.drag_indicator {
+    float:left;
+    padding: 1em 1em;
+}
+
+.drag_indicator:hover {
+    cursor: move;
 }

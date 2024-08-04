@@ -10,18 +10,20 @@
 
     <link rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Dosis">
+    <script src="goalazzo.js" defer></script>
 </head>
 <body>
-    <h1>Goalazzo</h1>
-    <button>+</button>
+    <button id="button_add_goal">+</button>
     <div id="goal_carousel_container">
-        <div id="goal_item">
-            funky
+        <div class="goal_item" draggable="true">
+            <h3 id="goal_name">My Goal</h3>
+            <form id="goal_notes">
+                <input type="text" placeholder="Notes, accomplishments" id="goal_notes" />
+            </form>
+            <div id="calendar"> Calendar goes here</div>
+            <div class="drag_indicator">
+                =
+            </div>
         </div>
-    </div>
-    <script>
-        let input = prompt('Tell me something spicy');
-        document.getElementById('goal_item').textContent = input;
-    </script>
 </body>
 </html>
