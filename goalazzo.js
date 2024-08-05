@@ -17,7 +17,7 @@ function create_goal () {
     goal_card.setAttribute("class", "goal_card");
 
     // create header
-    let goal_title = document.createElement("h3");
+    let goal_title = document.createElement("span");
     goal_title.setAttribute("id","goal_name");
     let name_input = prompt('What is your goal?');
     goal_title.append(name_input)
