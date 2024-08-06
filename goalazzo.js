@@ -1,7 +1,22 @@
+if (localStorage.getItem("goal_count") == null) {
+    goal_count = 0;
+    localStorage.setItem("goal_count",goal_count);
+};
+
 const button = document.querySelector('button');
 button.addEventListener('click', function(){
     create_goal();
+    goal_count = Number(localStorage.getItem("goal_count"));
+    goal_count = goal_count+1;
+    localStorage.setItem("goal_count",goal_count);
 });
+
+/*
+const form = document.querySelector('#goal_notes');
+form.addEventListener('submit', function(){
+    localStorage.
+});
+*/
 
 /*
     function: create_goal()
